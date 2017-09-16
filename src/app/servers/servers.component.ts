@@ -19,10 +19,8 @@ export class ServersComponent implements OnInit {
       this.allowNewServer = true;
     },2000)
   }
-
   ngOnInit() {
   }
-
   onCreateServer() {
     this.serverCreated = true;
     this.serverCreationStatus = 'Server was created!';
@@ -30,5 +28,4 @@ export class ServersComponent implements OnInit {
   onUpdateServerName(event: Event) {
     this.serverName = (<HTMLInputElement>event.target).value;
   }
-
 }
